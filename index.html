@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <video autoplay muted loop class="video">
+        <source src="./imagenes/video.mp4" type="video/mp4">
+    </video>
+    <header class="encabezado">
+        <div class="encabezado_container">
+        <img class="encabezado_logo" src="./imagenes/Logo.png" alt="Imagen logo Alura">
+        <h1 class="encabezado_titulo">DESAFIO DE ALURA LATAM</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="areaEncriptacion">
+            
+            <section class="areaEncriptacion_entrada">
+                <textarea class="areaTextoIngresado" id="campoTexto"
+                placeholder="ESCRIBA SU TEXTO AQUI POR FAVOR..."></textarea>
+                <div class="areaAdvertencia">
+                    <img class="areaAdvertencia_logo" src="./imagenes/Vector.png" alt="Imagen alerta">
+                    <p class="areaAdvertencia_texto">Solo letras minusculas y sin acentos</p>
+                </div>
+
+                <div class="areaEncriptacion_entrada_botones">
+                    <button class="areaEncriptacion_entrada_botones_encriptar boton" id="boton" onclick="botonEncriptar()">Encriptar
+                    </button>
+                    <button class="areaEncriptacion_entrada_botones_desencriptar boton" id="boton" onclick="botonDesencriptar()">Desencriptar
+                    </button>
+                    <button class="areaEncriptacion_entrada_botones_limpiar boton" type="button" id="limpiar" onclick="borrarTexto()">Limpiar</button>
+                    
+
+                </div>
+
+            </section>
+
+            <section class="areaEncriptacion_salida">
+                <img class="areaEncriptacion_salida_imagen" id="imagenSalida" src="./imagenes/investi.jpg" alt="Imagen hacker">
+                <div class="areaEncriptacion_salida_mensaje" id="mensajes">
+                    <p class="areaEncriptacion_salida_mensaje1">Ningun mensaje fue <br> encontrado</p>
+                    <p class="areaEncriptacion_salida_mensaje2">Ingrese el texto que deseas ENCRIPTAR o <br>DESENCRIPTAR en minusculas</p>
+
+                </div>
+
+                <textarea class="areaEncriptacion_salida_textoMostrado" id="campoMensaje"></textarea>
+
+                <div class="areaEncriptacion_salida_copiar" id="botonCopiar">
+                    <button class="areaEncriptacion_salida_botonCopiar" id="botonCopiar_boton" onclick="botonCopiar()">Copiar</button>
+
+                </div>
+
+            </section>
+            
+         </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+       
+                <img class="logoGitHub" src="imagenes/github.png">
+                <p>PRACTICA DE***ARANTZA***</p>
+                <img class="logoGitHub" src="imagenes/github.png">
+            </div>
+        
+    </footer>
+
+    <script src="app.js"></script>
+
+
+    
+</body>
+</html>
